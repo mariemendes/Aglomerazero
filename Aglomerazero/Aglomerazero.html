@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Localize um estabelecimento | Aglomerazer0</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <link rel="icon" href="./public/images/amarelo.png" />
+
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <link rel="stylesheet" href="./public/css/animations.css" />
+    <link rel="stylesheet" href="./public/css/page-orphanages.css" />
+  </head>
+  <body>
+    <div id="page-orphanages">
+        <aside class="animation-right">
+            <header>
+                <img class="logo-master" src="public/images/logo-master.png" alt="Happy"></header>
+                <body>
+                <h2>Instruções</h2>
+                <p><b>1.</b> Escolha um restaurante no mapa ou procure na espaço abaixo:<br><br>
+                <input type="text" id="fname" name="fname" value="Nome do Estabelecimento" class="x-input"><br><input type="button" onclick="alert('Hello World!')" value="Submit" class="x-btn"><br><br>
+                <b>2.</b> Verifique a quantidade de pessoas na fila através da legenda abaixo e inclua seu nome na fila</p>
+                <p class="x-attention"><b>Atenção</b> ao numero de pessoas já presentes no estabelecimento, coloque suas informações corretas no cadastro pois ele será enviado ao estabelecimento e evitará problemas em sua chegada.</p>
+                <p class="x-enjoy"><i>Enjoy!</i></p>
+                 
+         <p class="line">_____________________________</p>       
+                <h3>Legenda</h3>
+        <div class="legenda">
+          <div class="verde">     
+            <img class="x-verde-logo" src="public/images/verde.png">
+            <p class="x-verde">0 - 10 pessoas na fila<br>
+            <p class="x-verde1"> De 0 à 30min</p>
+          </div>     
+
+          <div class="amarelo">
+            <img class="x-amarelo-logo" src="public/images/amarelo.png">
+            <p class="x-amarelo">11 - 20 pessoas na fila</p>
+            <p class="x-amarelo1">De 30min à 1h</p>
+          </div>
+
+          <div class="laranja">
+            <img class="x-laranja-logo" src="public/images/laranja.png">
+            <p class="x-laranja">21 - 30 pessoas na fila</p>
+            <p class="x-laranja1">De 1h à 1h30min</p>
+          </div>
+
+          <div class="vermelho">
+            <img class="x-vermelho-logo" src="public/images/vermelho.png">      
+            <p class="x-vermelho">31 - + pessoas na fila</p>
+            <p class="x-vermelho1">+ de 1h30</p>
+          </div>
+        </div>  
+          </body>
+            <!-- <footer>
+                <strong>São Paulo - SP</strong>
+            </footer> -->
+        </aside>
+        <div id="mapid"></div>
+
+        <a href="create-orphanage.html" class="create-orphanage" title="Cadastre um orfanato" text="+"></a>
+        <img src="./public/images/plus.svg" alt="Criar Orfanato">
+
+    </div>
+    <script src="./public/scripts/page-orphanages.js"></script>
+    </body>
+</html>

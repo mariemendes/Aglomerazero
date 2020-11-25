@@ -1,0 +1,255 @@
+#page-orphanages{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+.logo-master {
+    width: 60%;
+    margin-left: 17%;
+}
+
+aside{
+    width: clamp(24rem, 35vw, 44rem);
+    background: linear-gradient(329.54deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    padding: clamp(0rem, 2vh, 6rem);
+    border-right: 1px solid #20124dff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+aside h2{
+    margin-top: 2.4rem;
+    font: 800 clamp(1.8rem, 1.5vw, 3.6rem)/1.1 'Oswald', sans-serif;
+    color: #20124dff;
+    text-transform: uppercase;
+    text-align: center;
+}
+aside p{
+    margin-top: 1.4rem;
+    font: 400 1.1rem/1.1 'Oswald', sans-serif;
+    color: #20124dff;
+}
+
+aside footer p{
+    margin-top: 0.1rem;
+}
+
+.x-input {
+    color: #8e7cc3ff;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-left: 1.5rem;
+    border: solid 1px #20124dff;
+}
+
+.x-btn {
+    color: #20124dff;
+    border-radius: 1rem;
+    width: 7rem;
+    height: 2.5rem;
+    text-align: center;
+    border: solid 1px #f6b26bff;
+    margin-top: 0.5rem;
+    margin-left: 33%;
+    background-color: #f6b26bff;
+    cursor: pointer;
+}
+
+.x-attention {
+    text-align: center;
+}
+
+.x-enjoy {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 25px;
+    color: #8e7cc3ff;
+}
+
+#mapid { 
+    width: 100%;
+    height: 100%; 
+}
+
+/*button*/
+a.create-orphanage {
+    display: none;
+    position: absolute;
+
+    width: 4rem;
+    height: 4rem;
+    background: #15B6D6;
+    border: 0;
+    border-radius: 1rem;
+    right: 4rem;
+    bottom: 4rem;
+    color: white;
+    
+    justify-content: center;
+    align-items: center;
+    transition: background-color 2ms;
+
+}
+a.create-orphanage:hover {
+    background: #17D6EB;
+}
+
+.leaflet-popup-content-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+
+}
+
+.leaflet-popup-content {
+    color: #0089A5;
+    font: 600 15px/1 'Oswald', sans-serif;
+    margin: .5rem 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 357px !important;
+}
+
+.leaflet-popup-content a{
+    width: 3rem;
+    height: 3rem;
+    background: #f6b26bff;
+    box-shadow: 17.2828px 27.65px 41.48px rgba(23, 142, 166, 0.16);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color .2s;
+
+}
+.leaflet-popup-content a:hover{
+    background: #351c75ff;
+}
+
+.leaflet-popup-tip {
+    display: none;
+}
+
+.line{
+    margin-top: 0rem;
+    text-align: center;
+    color: #f6b26bff;
+}
+h3 {
+    color: #351c75ff;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.legenda {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -1rem;
+}
+.verde img{
+    width: 2rem;
+}
+.x-verde {
+    margin-top: 1rem;
+    font-size: 11px;
+    margin-right: 4px;
+}
+.x-verde1{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: green;
+    font-size: 12px;
+}
+
+.amarelo img{
+    width: 2rem;
+}
+.x-amarelo {
+    margin-top: 1rem;
+    font-size: 11px;
+    margin-right: 4px;
+}
+.x-amarelo1{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: rgb(182, 182, 1);
+    font-size: 12px;
+}
+
+.laranja img{
+    width: 2rem;
+}
+.x-laranja {
+    margin-top: 1rem;
+    font-size: 11px;
+    margin-right: 4px;
+}
+.x-laranja1{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: orangered;
+    font-size: 12px;
+}
+.vermelho img{
+    width: 2rem;
+}
+.x-vermelho {
+    margin-top: 1rem;
+    font-size: 11px;
+}
+.x-vermelho1{
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    color: red;
+    font-size: 12px;
+}
+
+
+footer {
+    margin-top: 1rem;
+    color: #b4a7d6ff;
+    align-items: center;
+    text-align: center;
+    display: block;
+}
+
+
+.star-txt {
+    height: 24px;
+    color: #b4a7d6ff;
+    transform: translate(0px, 5px);
+    margin-right: -15px;
+}
+.restaurante-name{
+    font-size: 20px;
+    color: #351c75ff;
+}
+.star-img {
+    height: 24px;
+}
+
+.endereco {
+    margin-left: 1rem !important;
+    margin-right: 2rem !important;
+    color: #20124dff;
+    line-height: 18px;
+}
+.icon-seta{
+    background: #f6b26bff;
+    border-radius: 7px;
+    padding: 6px;
+    cursor: pointer;
+}
